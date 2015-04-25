@@ -11,7 +11,7 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.silkmq</groupId>
+    <groupId>org.silkmq</groupId>
     <artifactId>silkmq-parent</artifactId>
     <name>SilkMQ Parent</name>
     <packaging>pom</packaging>
