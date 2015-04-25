@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>9</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.silkmq</groupId>
+    <artifactId>silkmq-parent</artifactId>
+    <name>SilkMQ Parent</name>
+    <packaging>pom</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <properties>
+        <karaf.version>4.0.0.M2</karaf.version>
+    </properties>
+
+    <scm>
+        <url>https://github.com/silkmq/silkmq-parent</url>
+        <connection>scm:git:git@github.com:silkmq/silkmq-parent.git</connection>
+        <developerConnection>scm:git:git@github.com:silkmq/silkmq-parent.git</developerConnection>
+        <tag>silkmq-parent-0.0.1</tag>
+    </scm>
+
+</project>
