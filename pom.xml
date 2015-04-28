@@ -19,6 +19,9 @@
 
     <properties>
         <karaf.version>4.0.0.M2</karaf.version>
+
+        <features-maven.version>2.4.2</features-maven.version>
+        <maven-resources.version>2.6</maven-resources.version>
     </properties>
 
     <scm>
@@ -27,5 +30,22 @@
         <developerConnection>scm:git:git@github.com:silkmq/silkmq-parent.git</developerConnection>
         <tag>silkmq-parent-0.0.1</tag>
     </scm>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>${maven-resources.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.karaf.tooling</groupId>
+                    <artifactId>features-maven-plugin</artifactId>
+                    <version>${features-maven.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 
 </project>
