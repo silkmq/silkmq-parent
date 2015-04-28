@@ -21,7 +21,9 @@
         <karaf.version>4.0.0.M2</karaf.version>
 
         <features-maven.version>2.4.2</features-maven.version>
-        <maven-resources.version>2.6</maven-resources.version>
+        <maven-assembly.version>2.5.3</maven-assembly.version>
+        <maven-dependency.version>2.10</maven-dependency.version>
+        <maven-resources.version>2.7</maven-resources.version>
     </properties>
 
     <scm>
@@ -36,9 +38,15 @@
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>${maven-assembly.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-resources-plugin</artifactId>
                     <version>${maven-resources.version}</version>
                 </plugin>
+
                 <plugin>
                     <groupId>org.apache.karaf.tooling</groupId>
                     <artifactId>features-maven-plugin</artifactId>
