@@ -21,7 +21,9 @@
         <inject.version>1</inject.version>
         <junit.version>4.12</junit.version>
         <karaf.version>4.0.0.M2</karaf.version>
+        <logback.version>1.1.3</logback.version>
         <pax-exam.version>4.5.0</pax-exam.version>
+        <slf4j.version>1.7.9</slf4j.version>
 
         <features-maven.version>2.4.2</features-maven.version>
         <maven-assembly.version>2.5.3</maven-assembly.version>
