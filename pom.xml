@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
- <!--
+<!--
  * Copyright (c) 2015 silkmq.org.  All rights reserved.
 
   Licensed to silkmq.org under one or more contributor license
@@ -64,6 +64,24 @@
     <pluginManagement>
       <plugins>
         <plugin>
+          <groupId>org.apache.felix</groupId>
+          <artifactId>maven-bundle-plugin</artifactId>
+          <version>${version.maven-bundle-plugin}</version>
+          <extensions>true</extensions>
+          <dependencies>
+            <dependency>
+              <groupId>biz.aQute.bnd</groupId>
+              <artifactId>bndlib</artifactId>
+              <version>${version.bndlib}</version>
+            </dependency>
+          </dependencies>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.karaf.tooling</groupId>
+          <artifactId>features-maven-plugin</artifactId>
+          <version>${version.features-maven-plugin}</version>
+        </plugin>
+        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-assembly-plugin</artifactId>
           <version>${version.maven-assembly-plugin}</version>
@@ -72,11 +90,6 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-resources-plugin</artifactId>
           <version>${version.maven-resources-plugin}</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.karaf.tooling</groupId>
-          <artifactId>features-maven-plugin</artifactId>
-          <version>${version.features-maven-plugin}</version>
         </plugin>
       </plugins>
     </pluginManagement>
